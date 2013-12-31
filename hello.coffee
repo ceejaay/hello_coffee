@@ -1,6 +1,18 @@
-people = 
-  name: "Chad"
-  age: 38
 
-alert people.name
-alert people.age
+
+class Animal
+  constructor: (@name, @type) ->
+
+  move: ->
+    alert "Slithering..."
+
+
+sammy = new Animal("Sammy", "Python")
+
+alert sammy.name
+alert sammy.type
+
+sammy.move
+
+
+

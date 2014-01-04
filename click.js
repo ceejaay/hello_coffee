@@ -2,8 +2,14 @@
 (function() {
 
   $().ready(function() {
-    return $('h1, p').click(function() {
+    $('h1').click(function() {
       return alert("You clicked this");
+    });
+    $('p').click(function() {
+      return alert("you cliked the other thing");
+    });
+    return $('ul >  li').click(function() {
+      return alert("you clicked the list element");
     });
   });
 
